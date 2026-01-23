@@ -100,3 +100,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+
+const reveals = document.querySelectorAll(".reveal, .reveal-right");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        observer.unobserve(entry.target); // animate only once
+      }
+    });
+  },
+  {
+    threshold: 0.15, // when 15% visible
+  }
+);
+
+reveals.forEach((reveal) => observer.observe(reveal));
+
+

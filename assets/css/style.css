@@ -142,6 +142,8 @@ html {
 .h3 {
   font-size: var(--fs-3);
   font-weight: 700;
+  text-decoration: none;
+
 }
 
 .h4 {
@@ -388,7 +390,9 @@ header .btn-group {
   color: var(--foreground-secondary);
   margin-bottom: 2rem;
 }
-
+.blog-content-wrapper #title-project{
+  text-decoration: none;
+}
 .hero .btn-group {
   display: flex;
   justify-content: center;
@@ -1216,5 +1220,36 @@ header .btn-group {
   color: var(--foreground-primary);
   transform: scale(1.1);
 }
+
+
+/* ===== Scroll reveal animation ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: transform, opacity;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ===== Slide from right (for aside) ===== */
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: transform, opacity;
+}
+
+.reveal-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.topic-btn.reveal,
+.hashtag.reveal {
+  transition-delay: var(--delay, 0s);
+}
+
 
 

@@ -35,7 +35,6 @@
   </head>
 
   <body class="dark-theme">
-
     <!-- Start scroll-up-button -->
     <div class="scroll-up-btn" onclick="scrollToTop()">
       <i class="fa-solid fa-arrow-up"></i>
@@ -230,7 +229,7 @@
             <h2 id="projects" class="h2">Projects</h2>
 
             <div class="blog-card-group">
-              <div class="blog-card">
+              <div class="blog-card reveal">
                 <div class="blog-card-banner">
                   <img
                     src="./assets/images/todolist.png"
@@ -243,7 +242,7 @@
                   <button class="blog-topic text-tiny">Personal Project</button>
 
                   <h3>
-                    <a href="#" class="h3">To-Do List App</a>
+                    <a href="#" id="title-project" class="h3">To-Do List App</a>
                   </h3>
                   <div class="tech-stack">
                     <span class="tech">React</span>
@@ -267,7 +266,7 @@
                 </div>
               </div>
 
-              <div class="blog-card">
+              <div class="blog-card reveal">
                 <div class="blog-card-banner">
                   <img
                     src="./assets/images/camping.jpg"
@@ -283,7 +282,7 @@
                   </button>
 
                   <h3>
-                    <a href="" class="h3"> Camping App </a>
+                    <a href="#" id="title-project" class="h3"> Camping App </a>
                   </h3>
                   <div class="tech-stack">
                     <span class="tech">React</span>
@@ -309,7 +308,7 @@
                 </div>
               </div>
 
-              <div class="blog-card">
+              <div class="blog-card reveal">
                 <div class="blog-card-banner">
                   <img
                     src="./assets/images/olfactive.png"
@@ -325,7 +324,9 @@
                   </button>
 
                   <h3>
-                    <a href="#" class="h3">Olf'Active Portfolio Website</a>
+                    <a href="#" id="title-project" class="h3"
+                      >Olf'Active Portfolio Website</a
+                    >
                   </h3>
                   <div class="tech-stack">
                     <span class="tech">React</span>
@@ -352,7 +353,7 @@
                 </div>
               </div>
 
-              <div class="blog-card">
+              <div class="blog-card reveal">
                 <div class="blog-card-banner">
                   <img
                     src="./assets/images/ksh-project.png"
@@ -366,7 +367,9 @@
                   <button class="blog-topic text-tiny">College Project</button>
 
                   <h3>
-                    <a href="#" class="h3">E-commerce Website</a>
+                    <a href="#" id="title-project" class="h3"
+                      >E-commerce Website</a
+                    >
                   </h3>
                   <div class="tech-stack">
                     <span class="tech">HTML5</span>
@@ -395,7 +398,7 @@
                 <h2 class="h2">Education</h2>
 
                 <div class="education-timeline">
-                  <div class="edu-item">
+                  <div class="edu-item reveal">
                     <span class="dot"></span>
                     <div class="content">
                       <h3>EMSI Casablanca</h3>
@@ -403,7 +406,7 @@
                       <span>Computer Science & Networks</span>
                     </div>
                   </div>
-                  <div class="edu-item">
+                  <div class="edu-item reveal">
                     <span class="dot"></span>
                     <div class="content">
                       <h3>ISFO (OFPPT)</h3>
@@ -415,7 +418,7 @@
                     </div>
                   </div>
 
-                  <div class="edu-item">
+                  <div class="edu-item reveal">
                     <span class="dot"></span>
                     <div class="content">
                       <h3>High School Othman Ibno Affan</h3>
@@ -432,7 +435,7 @@
 
               <h2 id="certificates" class="h2">Certificates</h2>
 
-              <div class="blog-card">
+              <div class="blog-card reveal">
                 <div class="blog-card-banner">
                   <img
                     src="./assets/images/python.png"
@@ -451,7 +454,7 @@
                 </div>
               </div>
 
-              <div class="blog-card">
+              <div class="blog-card reveal">
                 <div class="blog-card-banner">
                   <img
                     src="./assets/images/js.png"
@@ -469,7 +472,7 @@
                   </h3>
                 </div>
               </div>
-              <div class="blog-card">
+              <div class="blog-card reveal">
                 <div class="blog-card-banner">
                   <img
                     src="./assets/images/react.png"
@@ -487,7 +490,7 @@
                   </h3>
                 </div>
               </div>
-              <div class="blog-card">
+              <div class="blog-card reveal">
                 <div class="blog-card-banner">
                   <img
                     src="./assets/images/C++.png"
@@ -512,32 +515,40 @@
           - ASIDE
         -->
 
-          <div class="aside">
+          <div class="aside reveal-right">
             <div class="topics">
               <h2 class="h2">Topics</h2>
 
-              <a href="#" class="topic-btn">
+              <a href="#" class="topic-btn reveal" style="--delay: 0.1s">
                 <div class="icon-box">
                   <ion-icon name="code-slash-sharp"></ion-icon>
                 </div>
 
-                <p>Software Development</p>
+                <p>Front-End Development</p>
               </a>
 
-              <a href="#" class="topic-btn">
+              <a href="#" class="topic-btn reveal" style="--delay: 0.1s">
                 <div class="icon-box">
                   <ion-icon name="server-outline"></ion-icon>
                 </div>
 
-                <p>Database</p>
+                <p>Back-End Development</p>
               </a>
+              
 
-              <a href="#" class="topic-btn">
+              <a href="#" class="topic-btn reveal" style="--delay: 0.1s">
                 <div class="icon-box">
                   <ion-icon name="rocket-outline"></ion-icon>
                 </div>
 
-                <p>UI/UX Design</p>
+                <p>UI/UX Design (Figma)</p>
+              </a>
+              <a href="#" class="topic-btn reveal" style="--delay: 0.1s">
+                <div class="icon-box">
+                  <ion-icon name="layers-outline"></ion-icon>
+                </div>
+
+                <p>Scrum & Agile (Jira)</p>
               </a>
             </div>
 
@@ -545,14 +556,14 @@
               <h2 class="h2">Soft Skills</h2>
 
               <div class="wrapper">
-                <button class="hashtag">Problem-Solving</button>
-                <button class="hashtag">Team Work</button>
-                <button class="hashtag">Communication</button>
-                <button class="hashtag">Flexibility</button>
-                <button class="hashtag">Time Management</button>
-                <button class="hashtag">Creativity</button>
-                <button class="hashtag">Ponctuality</button>
-                <button class="hashtag">Stress Management</button>
+                <button class="hashtag reveal">Problem-Solving</button>
+                <button class="hashtag reveal">Team Work</button>
+                <button class="hashtag reveal">Communication</button>
+                <button class="hashtag reveal">Flexibility</button>
+                <button class="hashtag reveal">Time Management</button>
+                <button class="hashtag reveal">Creativity</button>
+                <button class="hashtag reveal">Ponctuality</button>
+                <button class="hashtag reveal">Stress Management</button>
               </div>
             </div>
           </div>
@@ -635,7 +646,7 @@
 
       <!-- Copyright -->
       <div class="footer-bottom">
-        © 2026 · Challal Hanane · All Rights Reserved
+        © 2026 · Challal Hanane · All Rights Reserved · Coded with 💗
       </div>
     </footer>
 
